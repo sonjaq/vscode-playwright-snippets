@@ -28,7 +28,7 @@ Open the Command Palette and type `Insert Snippet`. Then, simply choose the dedi
 
 Below is attached a list of all supported snippets.
 
-### Puppeteer
+### Playwright
 
 | Snippet             | Content                                    |
 | ------------------- | ------------------------------------------ |
