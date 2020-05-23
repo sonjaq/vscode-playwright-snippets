@@ -32,9 +32,9 @@ Below is attached a list of all supported snippets.
 
 | Snippet             | Content                                    |
 | ------------------- | ------------------------------------------ |
-| `p-import`          | const playwright = require('puppeteer');   |
-| `p-import-chromium` | const { chromium } = require('puppeteer'); |
-| `p-import-firefox`  | const { firefox } = require('puppeteer');  |
+| `p-import`          | const playwright = require('playwright');   |
+| `p-import-chromium` | const { chromium } = require('playwright'); |
+| `p-import-firefox`  | const { firefox } = require('playwright');  |
 
 ### Browser
 
