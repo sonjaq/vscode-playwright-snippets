@@ -1,37 +1,42 @@
 {
-  "Puppeteer": {
+  "Playwright": {
     "prefix": "p-import",
-    "body": "const ${1:puppeteer} = require('puppeteer');",
-    "description": "Imports Puppeteer's full module"
+    "body": "const { ${1:playwrigtht} } = require('playwright');",
+    "description": "Imports Playwrigtht's full module"
   },
-  "Puppeteer - core": {
-    "prefix": "p-import-core",
-    "body": "const ${1:puppeteer} = require('puppeteer-core');",
-    "description": "Imports Puppeteer's core module"
+  "playwright - chromium": {
+    "prefix": "p-import-chromium",
+    "body": "const { chromium } = require('playwright');",
+    "description": "Imports Playwright's Chromium module"
   },
-  "Puppeteer - firefox": {
+  "playwright - firefox": {
     "prefix": "p-import-firefox",
-    "body": "const ${1:puppeteer} = require('puppeteer-firefox');",
-    "description": "Imports Puppeteer's Firefox module"
+    "body": "const { firefox } = require('playwright');",
+    "description": "Imports Playwright's Firefox module"
   },
-  "puppeteer - devices": {
+  "playwright - webkit": {
+    "prefix": "p-import-webkit",
+    "body": "const { webkit } = require('playwright');",
+    "description": "Imports Playwright's WebKit module"
+  },
+  "playwright - desktop browsers": {
+    "prefix": "p-import-browsers-desktop",
+    "body": "const { chromium, firefox, webkit } = require('playwright');",
+    "description": "Imports three dekstop browsing engines"
+  },
+  "playwright - devices": {
     "prefix": "p-import-devices",
-    "body": "const { devices } = require('puppeteer');",
+    "body": "const { devices } = require('playwright');",
     "description": "Imports the device descriptors module"
   },
-  "puppeteer.connect": {
-    "prefix": "p-connect",
-    "body": ["await puppeteer.connect({", "\tbrowserURL: '$0'", "});"],
-    "description": "Attaches Puppeteer to an existing Chromium instance"
-  },
-  "puppeteer.launch": {
+  "playwright.launch": {
     "prefix": "p-launch",
-    "body": "const ${1:browser} = await puppeteer.launch($0);",
-    "description": "Creates a Chromium instance and attaches Puppeteer to it"
+    "body": "const ${1:browser} = await playwright.launch($0);",
+    "description": "Creates a Chromium instance and attaches playwright to it"
   },
-  "puppeteer.product": {
+  "playwright.product": {
     "prefix": "p-product",
-    "body": "const ${1:product} = puppeteer.product;",
+    "body": "const ${1:product} = playwright.product;",
     "description": "Returns the name of the browser (whether 'chrome' or 'firefox')"
   },
   "browser.browserContexts": {
@@ -44,15 +49,15 @@
     "body": "await browser.close();",
     "description": "Closes Chromium and all of its pages"
   },
-  "browser.createIncognitoBrowserContext": {
-    "prefix": "p-browser-createIncognitoBrowserContext",
-    "body": "const ${1:context} = await browser.createIncognitoBrowserContext();",
+  "browser.newContext": {
+    "prefix": "p-browser-context",
+    "body": "const ${1:context} = await browser.newContext();",
     "description": "Creates a new browser context"
   },
   "browser.disconnect": {
     "prefix": "p-browser-disconnect",
     "body": "browser.disconnect();",
-    "description": "Disconnects Puppeteer from the browser, but leaves the Chromium process running"
+    "description": "Disconnects playwright from the browser, but leaves the Chromium process running"
   },
   "browser.newPage": {
     "prefix": "p-browser-newPage",
@@ -67,7 +72,7 @@
   "browser.on('disconnected')": {
     "prefix": "p-browser-on-disconnected",
     "body": ["browser.on('disconnected', () => {", "\t$0", "});"],
-    "description": "Emitted when Puppeteer gets disconnected from the Chromium instance"
+    "description": "Emitted when playwright gets disconnected from the Chromium instance"
   },
   "page.$": {
     "prefix": "p-page-$",
@@ -443,11 +448,12 @@
   "Examples - basic": {
     "prefix": "p-examples-basic",
     "body": [
-      "const puppeteer = require('puppeteer');",
+      "const playwright = require('playwright');",
       "",
       "(async () => {",
-      "\tconst browser = await puppeteer.launch();",
+      "\tconst browser = await playwright.launch();",
       "\tconst page = await browser.newPage();",
+      "\tconst context = await browser.newContext();",
       "",
       "\t$0",
       "",

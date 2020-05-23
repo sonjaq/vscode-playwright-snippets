@@ -1,21 +1,21 @@
 {
-  "name": "puppeteer-snippets",
-  "version": "1.6.0",
+  "name": "playwright-snippets",
+  "version": "1.0.0",
   "license": "MIT",
-  "author": "Nitay Neeman",
-  "description": "📋 A Visual Studio Code extension which adds predefined useful code snippets for Puppeteer",
-  "homepage": "https://github.com/nitayneeman/vscode-puppeteer-snippets",
+  "author": "Sonja Leaf",
+  "description": "📋 A Visual Studio Code extension which adds predefined useful code snippets for 🎭 Playwright",
+  "homepage": "https://github.com/sonjaq/vscode-playwright-snippets",
   "keywords": [
-    "Puppeteer"
+    "Playwright"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nitayneeman/vscode-puppeteer-snippets.git"
+    "url": "https://github.com/sonjaq/vscode-playwright-snippets.git"
   },
-  "bugs": "https://github.com/nitayneeman/vscode-puppeteer-snippets/issues",
-  "displayName": "Puppeteer Snippets",
-  "publisher": "nitayneeman",
-  "icon": "images/puppeteer-logo.png",
+  "bugs": "https://github.com/sonjaq/vscode-playwright-snippets/issues",
+  "displayName": "Playwright Snippets",
+  "publisher": "sonjaq",
+  "icon": "images/playwright-logo.png",
   "galleryBanner": {
     "color": "#40b5a4",
     "theme": "light"
@@ -43,13 +43,6 @@
       }
     ]
   },
-  "badges": [
-    {
-      "description": "Build",
-      "url": "https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets.svg?token=vHfpxFNvotCsScqrpvMs&branch=master",
-      "href": "https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets"
-    }
-  ],
   "engines": {
     "vscode": "^1.31.0"
   },

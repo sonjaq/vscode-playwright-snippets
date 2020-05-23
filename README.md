@@ -1,38 +1,16 @@
-<p align="center">
-  <img src="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/images/puppeteer-logo.png?raw=true" alt="Puppeteer Logo">
-</p>
-
-<h1 align="center">VS Code - Puppeteer Snippets</h1>
-
-<p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/nitayneeman.puppeteer-snippets.svg?label=Puppeteer%20Snippets&&color=40b5a4" alt="Marketplace"></a>
-  <a href="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets"><img src="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets.svg?token=vHfpxFNvotCsScqrpvMs&branch=master" alt="Build"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/installs/nitayneeman.puppeteer-snippets.svg?color=blue" alt="Installs"></a>
-  <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-lightgray.svg" alt="License"></a>
-</p>
-
-<p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets">Installation</a> ·
-  <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets#-how-to-use">Usage</a> ·
-  <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets#-snippets-list">Snippets</a> ·
-  <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/CHANGELOG.md">CHANGELOG</a>
-</p>
+<h1 align="center">VS Code - 🎭 Playwright Playwright Snippets</h1>
 
 ## ℹ️️ Description
 
-This Visual Studio Code extension adds predefined useful code snippets for [Puppeteer](https://pptr.dev/).
+This Visual Studio Code extension adds predefined useful code snippets for 🎭 [Playwright](https://github.com/microsoft/playwright).
 
-<p align="center">
-  <img src="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/images/preview.gif?raw=true" alt="Preview">
-</p>
-
-Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getting more information about the available capabilities.
+These were forked from [nitayneeman/vscode-puppeteer-snippets](https://github.com/nitayneeman/vscode-puppeteer-snippets) and are being adapted for Playwright.
 
 <br>
 
 ## 👨🏻‍🏫 How to Use
 
-The first thing you need to do is installing the [extension](https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets).
+The first thing you need to do is installing the [extension](https://marketplace.visualstudio.com/items?itemName=sonjaq.playwright-snippets).
 
 Basically, there are two ways to apply the snippets:
 
@@ -52,15 +30,11 @@ Below is attached a list of all supported snippets.
 
 ### Puppeteer
 
-| Snippet            | Content                                |
-| ------------------ | -------------------------------------- |
-| `p-import`         | require('puppeteer')                   |
-| `p-import-core`    | require('puppeteer-core')              |
-| `p-import-firefox` | require('puppeteer-firefox')           |
-| `p-import-devices` | require('puppeteer/DeviceDescriptors') |
-| `p-connect`        | puppeteer.connect                      |
-| `p-launch`         | puppeteer.launch                       |
-| `p-product`        | puppeteer.product                      |
+| Snippet             | Content                                    |
+| ------------------- | ------------------------------------------ |
+| `p-import`          | const playwright = require('puppeteer');   |
+| `p-import-chromium` | const { chromium } = require('puppeteer'); |
+| `p-import-firefox`  | const { firefox } = require('puppeteer');  |
 
 ### Browser
 
